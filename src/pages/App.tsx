@@ -1,6 +1,13 @@
-import { ContainerHome } from "../styles/home";
+import {
+  ContainerHome,
+  ContainerButton,
+  ButtonPrimary,
+  Button,
+} from "../styles/home";
 import { NewFeatures } from "../utils/features";
 import { bio } from "../utils/bio";
+
+import { IoIosCheckmark } from "react-icons/io";
 
 export function App() {
   return (
@@ -10,13 +17,18 @@ export function App() {
           <h1>Mutinho</h1>
           <p>{bio}</p>
           {NewFeatures.map((itens) => {
-            return <span key={itens.id}>{itens.title}</span>;
+            return (
+              <li key={itens.id}>
+                <IoIosCheckmark size={25}/>
+                {itens.title}
+              </li>
+            );
           })}
-          <div>
-            <button>add to discord</button>
-            <button>sea features</button>
-          </div>
         </div>
+        <ContainerButton>
+          <Button>Add to discord</Button>
+          <ButtonPrimary>see features</ButtonPrimary>
+        </ContainerButton>
       </ContainerHome>
     </>
   );

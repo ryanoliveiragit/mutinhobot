@@ -1,19 +1,19 @@
 export const NewFeatures = [
     {
         id: 1,
-        title: 'Feature 1'
+        title: 'Moderation'
     },
     {
         id: 2,
-        title: 'Feature 1'
+        title: 'Custom commands'
     },
     
     {
         id: 3,
-        title: 'Feature 1'
+        title: 'Reaction roles'
     },
     {
         id: 4,
-        title: 'Feature 1'
+        title: 'Twitch, YouTube and Twitter alerts'
     },
 ]

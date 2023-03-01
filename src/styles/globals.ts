@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
     body {
-        padding: 2em 3em;
+        padding: 5em 10em;
         font-family: 'DM Sans', sans-serif;
         -webkit-font-smoothing: antialiased;
         background-color: ${(props) => props.theme.gray};
