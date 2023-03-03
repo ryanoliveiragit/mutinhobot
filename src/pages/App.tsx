@@ -91,9 +91,14 @@ export function App() {
         <div>
           <h1>Criar novo chamado</h1>
           <p>
-            essa funcionalidade pode estar relacionada a um sistema de suporte,
-            onde os usuários podem criar um chamado para reportar um problema ou
-            solicitar ajuda.
+            O Chamado do Discord é uma função que permite aos membros de uma
+            equipe criar um canal no aplicativo Discord para acompanhar o
+            progresso de uma tarefa ou projeto quando o Jira, uma ferramenta
+            comumente usada para gerenciamento de projetos, estiver offline ou
+            enfrentando problemas. Com essa funcionalidade, os membros da equipe
+            podem colaborar em tempo real, compartilhando atualizações,
+            informações e arquivos relevantes para a tarefa ou projeto em
+            questão.
           </p>
         </div>
         <ImageMutinho data-aos="fade-up" id="Templates">
@@ -104,17 +109,15 @@ export function App() {
       </Default>
       <DefaultTemplate data-aos="fade-up">
         <div>
-          <h1>/Templates</h1>
+          <h1>/Template</h1>
           <p>
-            essa funcionalidade pode estar relacionada a um sistema de suporte,
-            onde os usuários podem criar um chamado para reportar um problema ou
-            solicitar ajuda.
+          No contexto do Jira, o template pode ser utilizado para padronizar a criação de chamados e outros tipos de tarefas, com informações já pré-definidas como nome, descrição, campos obrigatórios, etc. Para acionar um template, é possível utilizar um comando específico, como "/template", por exemplo.
           </p>
           <Button onClick={Templates}>Comandos</Button>
         </div>
         <ImageMutinho data-aos="fade-up" id="Pausa">
           <img
-            src="https://cdn.discordapp.com/attachments/1035363337015394316/1081050723954995250/Frame_3.png"
+            src="https://media.discordapp.net/attachments/1035363337015394316/1081094875656765490/Frame_2.png?width=1350&height=490"
             alt=""
           />
         </ImageMutinho>
@@ -123,9 +126,12 @@ export function App() {
         <div>
           <h1>/Pausa</h1>
           <p>
-            essa funcionalidade pode estar relacionada a um sistema de suporte,
-            onde os usuários podem criar um chamado para reportar um problema ou
-            solicitar ajuda.
+            O comando "/pausa", é uma funcionalidade disponível em alguns
+            sistemas de gerenciamento de projetos, que permite aos usuários
+            registrar o tempo em que estão em pausa. Ao acionar o comando, o
+            sistema começa a contar o tempo em que a pessoa está afastada das
+            atividades, e quando ela retorna, é possível encerrar a pausa,
+            clicando em um botão de "encerrar" ou "finalizar" a pausa.
           </p>
           <Button onClick={Pausa}>Comandos</Button>
         </div>
