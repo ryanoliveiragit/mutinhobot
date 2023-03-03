@@ -86,7 +86,7 @@ export const Container = styled.div`
   div>img{
     border-radius: 12px;
     margin-bottom: 2rem;
-    width: 75%;
+    width: 95%;
     animation: floating 3s ease-in-out infinite;
     --r-onboarding-step-arrow-size: 14px;
     text-align: var(--bs-body-text-align);
