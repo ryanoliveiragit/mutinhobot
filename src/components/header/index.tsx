@@ -1,5 +1,4 @@
-import { navLinks } from "../../utils/navLinks";
-import { Link } from "react-scroll";
+
 
 import { ContainerHeader } from "./styles";
 
@@ -9,19 +8,7 @@ export function Header() {
       <ContainerHeader>
         <h1>mutinho</h1>
         <ul>
-          {navLinks.map((itens) => {
-            return (
-              <Link
-                key={itens.id}
-                to={itens.title}
-                smooth={true}
-                offset={200}
-                duration={500}
-              >
-                {itens.title}
-              </Link>
-            );
-          })}
+          <button onClick={() => alert('Contate um dos desenvolvedores: ryanvs#2113 / diegorosa#1546')}>Suporte</button>
         </ul>
       </ContainerHeader>
     </div>

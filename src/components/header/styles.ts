@@ -16,8 +16,26 @@ export const ContainerHeader = styled.header`
         display: flex;
         gap: 2rem;
 
-        li {
+        a {
+            cursor: pointer;
+            font-weight: 600;
             font-size: 1rem;
         }
+    }
+    button {
+        border: none;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  :hover {
+    cursor: pointer;
+    transition: .2s;
+    background-color: ${(props) => props.theme.purpleBlack};
+  }
+  padding: .7rem 2rem;
+
+  display: flex;
+  background-color: ${(props) => props.theme.purple};
+
+  color: white;
     }
 `

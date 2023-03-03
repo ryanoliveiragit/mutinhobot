@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const ContainerHome = styled.div`
+> div {
+  margin-top: 2.5rem;
+}
   div > h1 {
     margin-bottom: 2rem;
 
@@ -11,11 +14,12 @@ export const ContainerHome = styled.div`
     line-height: 4rem;
   }
   div > p {
+    max-width: 40rem;
     font-size: 0.9rem;
     --tw-text-opacity: 1;
     color: rgb(145 149 171 / var(--tw-text-opacity));
 
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   div > li {
     display: flex;
@@ -41,7 +45,11 @@ export const Button = styled.button`
   border: none;
   border-radius: 0.5rem;
   font-size: 0.85rem;
-
+  :hover {
+    cursor: pointer;
+    transition: .2s;
+    background-color: ${(props) => props.theme.purpleBlack};
+  }
   padding: 1rem 2.5rem;
 
   display: flex;
@@ -78,7 +86,7 @@ export const Container = styled.div`
   div>img{
     border-radius: 12px;
     margin-bottom: 2rem;
-    width: 60%;
+    width: 75%;
     animation: floating 3s ease-in-out infinite;
     --r-onboarding-step-arrow-size: 14px;
     text-align: var(--bs-body-text-align);
@@ -95,9 +103,7 @@ export const Container = styled.div`
     vertical-align: baseline;
     border-style: none;
     max-width: fit-content!important;
-    perspective: 484px;
-    box-shadow: 67.1px 62.5px 125px -25px rgba(9,9,14,.856),16.2px 37.5px 75px -37.5px rgba(6,12,34,.274);
-    transform: scale(1) perspective(1000px) rotateX(23deg) rotateY(-23deg) rotate(15deg) translateX(5px) translateY(15px)!important;
+    
   }
 `;
 export const Image = styled.div`
@@ -120,7 +126,8 @@ padding: 2rem 15rem;
   margin: 0 auto;
   padding-bottom: 4rem;
 
-  li {
+  a {
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -129,6 +136,11 @@ padding: 2rem 15rem;
     font-size: 1rem;
     list-style: none;
     background-color: ${(props) => props.theme.purple};
+    transition: .2s;
+    :hover {
+      background-color: ${(props) => props.theme.purpleBlack};
+      transition: .2s;
+    }
   }
   li>p{
     font-size: .8rem;
@@ -169,7 +181,33 @@ export const Default = styled.div`
 
   color: white;
 `
+export const DefaultTemplate = styled.div`
+> div {
+    flex-direction: column;
+    display: flex;
+    gap: 1.5rem;
+    > img {
+    margin-left: 3rem!important;
+  }
+    button {
+      max-width: 9rem;
 
+    }
+    p {
+      font-size: 0.9rem;
+    --tw-text-opacity: 1;
+    color: rgb(145 149 171 / var(--tw-text-opacity));
+    }
+  }
+  padding: 5rem 20rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+
+  color: white;
+`
 export const ImageMutinho = styled.div`
   width: 50%;
   margin-right: 4rem;
